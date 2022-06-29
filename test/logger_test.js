@@ -1,5 +1,5 @@
 var test = require('tape')
-var choo = require('choo')
+var choo = require('@pirxpilot/choo')
 var devtools = require('../')
 
 test('Filtering out logs', function (t) {

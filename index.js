@@ -7,7 +7,7 @@ var copy = require('./lib/copy')
 var help = require('./lib/help')
 var perf = require('./lib/perf')
 var log = require('./lib/log')
-var getAllRoutes = require('wayfarer/get-all-routes')
+var getAllRoutes = require('@pirxpilot/wayfarer/get-all-routes')
 
 module.exports = expose
 
