@@ -1,11 +1,11 @@
-var test = require('tape')
-var choo = require('choo')
-var devtools = require('../')
+const test = require('tape')
+const choo = require('@pirxpilot/choo')
+const devtools = require('../')
 
 test('Filtering out logs', function (t) {
   t.plan(1)
 
-  var app = choo()
+  const app = choo()
   app.use(devtools({
     filter: function (eventName, data, timing) {
       if (eventName === 'foo') {
