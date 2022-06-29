@@ -1,12 +1,10 @@
 {
-  "name": "choo-devtools",
+  "name": "@pirxpilot/choo-devtools",
   "description": "Console devtools for Choo",
-  "repository": "choojs/choo-devtools",
-  "version": "3.0.4",
+  "repository": "pirxpilot/choo-devtools",
+  "version": "0.0.0",
   "scripts": {
-    "deps": "dependency-check . && dependency-check . --extra --no-dev",
-    "start": "node .",
-    "test": "standard && npm run deps"
+    "test": "standard"
   },
   "dependencies": {
     "choo-hooks": "^1.0.0",
@@ -23,7 +21,6 @@
   },
   "devDependencies": {
     "choo": "^7.0.0",
-    "dependency-check": "^2.8.0",
     "standard": "^14.3.1",
     "tape": "^4.11.0"
   },
