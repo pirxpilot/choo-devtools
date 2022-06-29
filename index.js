@@ -1,22 +1,20 @@
-var EventEmitter = require('events').EventEmitter
-
-var storage = require('./lib/storage')
-var logger = require('./lib/logger')
-var debug = require('./lib/debug')
-var copy = require('./lib/copy')
-var help = require('./lib/help')
-var perf = require('./lib/perf')
-var log = require('./lib/log')
-var getAllRoutes = require('@pirxpilot/wayfarer/get-all-routes')
+const storage = require('./lib/storage')
+const logger = require('./lib/logger')
+const debug = require('./lib/debug')
+const copy = require('./lib/copy')
+const help = require('./lib/help')
+const perf = require('./lib/perf')
+const log = require('./lib/log')
+const getAllRoutes = require('@pirxpilot/wayfarer/get-all-routes')
+const nanobus = require('@pirxpilot/nanobus')
 
 module.exports = expose
 
-function expose (opts) {
-  opts = opts || {}
+function expose (opts = {}) {
   store.storeName = 'choo-devtools'
   return store
   function store (state, emitter, app) {
-    var localEmitter = new EventEmitter()
+    const localEmitter = nanobus()
 
     if (typeof window !== 'undefined') {
       logger(state, emitter, opts)
