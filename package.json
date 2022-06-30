@@ -2,7 +2,7 @@
   "name": "@pirxpilot/choo-devtools",
   "description": "Console devtools for Choo",
   "repository": "pirxpilot/choo-devtools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "test": "standard"
   },
