@@ -7,13 +7,12 @@
     "test": "standard"
   },
   "dependencies": {
+    "@pirxpilot/choo-hooks": "^1.0.0",
     "@pirxpilot/nanoscheduler": "^1.0.0",
     "@pirxpilot/wayfarer": "^1.0.0",
-    "choo-hooks": "^1.0.0",
     "clone": "^2.1.2",
     "nanologger": "^2.0.0",
     "object-change-callsite": "^1.0.2",
-    "on-performance": "^1.2.1",
     "plucker": "0.0.0",
     "prettier-bytes": "^1.0.4",
     "remove-array-items": "^2.0.0",
